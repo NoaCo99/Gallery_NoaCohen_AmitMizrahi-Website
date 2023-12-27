@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Noa Makeup Artist- גלריה</title>
-    <link rel="icon" type="image/x-icon" href="images/logo/makeupnoalogo.png" />
+    <link rel="icon" type="image/x-icon" href="images/logo/NewLogo.png" />
     <meta name="description" content="Noa Makeup- gallery" />
     <meta name="keywords" content="איפור, נועה כהן, נועה מאפרת, נועה כהן, מאפרת מאשדוד, מאפרת אשדוד והסביבה, אשדוד והסביבה, מאפרת אשדוד, מאפרת באשדוד, גלריה, איפור כלות, איפור ערב, איפור לאירוע,מאפרת, מאפרת מקצועית,pro MUA,Makeup Artist, Ashdod,Noa Cohen" />
     <meta name="author" content="Noa Cohen and Amit Mizrahi" />
@@ -22,7 +22,103 @@
 </head>
 <body>
     <div id="container">
-        </footer>
-    </div>
+        <header>
+            <!--תפריט ניווט-->
+            <nav aria-label="main-nav">
+                <a href="contactUs.html"><img src="images/icons/massege.png" title="צור קשר" alt="צור קשר" class="icons" /></a>
+                <a href="https://www.instagram.com/noacohen_makeupartist/" target="_blank"><img src="images/icons/insta.png" title="instagram" alt="אינסטגרם" class="icons" /></a>
+                <ul id="navTop">
+                    <li><a href="index.html"><img src="images/logo/NewLogo.png" alt="לוגו האתר" id="logoPic" /> </a></li>
+                    <li class="liWord"> <a href="index.html">דף הבית</a></li>
+                    <li class="liWord"><a href="about.html">אודות</a></li>
+                    <li class="liWord"><a href="gallery.html">גלריה</a></li>
+                    <li class="liWord"><a href="contantone.html">טיפים</a></li>
+                    <li class="liWord">
+                        <a href class="notActive">מוצרים מומלצים</a>
+                        <ul id="insideNav">
+                            <li><a href="contanttow.html">מוצרי פנים</a></li>
+                            <li><a href class="notActive">מוצרי עיניים</a></li>
+                            <li><a href class="notActive">מוצרי שפתיים</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+            <div class="gallery">
+                <h2>גלריה</h2>
+                <div class="photos" style="display: block;">
+                    <span class="picNum">1/7</span>
+                    <img src="images/amit/gallery/tips.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">2/7</span>
+                    <img src="images/amit/gallery/side.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">3/7</span>
+                    <img src="images/amit/gallery/products.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">4/7</span>
+                    <img src="images/amit/gallery/main.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">5/7</span>
+                    <img src="images/amit/gallery/gallery.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">6/7</span>
+                    <img src="images/amit/gallery/frontSideLook.jpg" style="width: 60%" />
+                </div>
+                <div class="photos" style="display: none;">
+                    <span class="picNum">7/7</span>
+                    <img src="images/amit/gallery/contactUs.png" style="width: 60%" />
+                </div>
+                <div class="imgDescription">
+                    <p id="imgDes"></p>
+                </div>
+
+                <a id="right" onclick="moveBTN(1)">&#10094;</a>
+                <a id="left" onclick="moveBTN(-1)">&#10095;</a>
+
+                <div class="imgRow">
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/tips.jpg" alt="עמית מסתכלת למצלמה" style="width:100%" onclick="choosedPic(1)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/side.jpg" alt="עמית מצולמת מהצד" style="width:100%" onclick="choosedPic(2)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/products.jpg" alt="עמית מסתכלת למצלמה מלמעלה" style="width:100%" onclick="choosedPic(3)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/main.jpg" alt="עמית מצולמת חצי פרופיל" style="width:100%" onclick="choosedPic(4)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/gallery.jpg" alt="עמית מסתכלת למטה" style="width:100%" onclick="choosedPic(5)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/frontSideLook.jpg" alt="עמית מטה את הראש" style="width:100%" onclick="choosedPic(6)" />
+                    </div>
+                    <div class="imgColum">
+                        <img class="demo " src="images/amit/gallery/contactUs.png" alt="נועה מאפרת את עמית" style="width:100%" onclick="choosedPic(7)" />
+                    </div>
+
+                </div>
+
+            </div>
+            </section>
+            </main>
+                <!--שורה תחתונה-->
+                <footer>
+                    <div id="pageEnd">
+                        <a href="index.html"><img src="images/logo/NewLogo.png" alt="לוגו האתר" id="logoPicEnd" /> </a>
+                        <div id="rightsEnd">© כל הזכויות שמורות ל-Noa Makeup <a href="siteMap.html" id="siteMap">מפת אתר</a></div>
+                    </div>
+                </footer>
+</div>
 </body>
 </html>
