@@ -9,7 +9,7 @@
 
 body {
     direction: rtl;
-    background-color: #fdf2f2;
+    background-color: #ffffff;
     font-family: "Assistant", Segoe UI;
     display: flex;
     width: 1280px;
@@ -37,148 +37,18 @@ a {
 }
 
 
-/*--------------------------------------------------------*/
-/*גלריה:*/
-
-.gallery {
-    box-sizing: border-box;
-    font-family: 'Assistant',Segoe UI;
-    padding-top: 70px;
-    padding-bottom: 40px;
-}
-
-    .gallery>h2 {
-        margin-right: 560px;
-        margin-bottom: 15px;
-        font-size: 300%;
-        font-weight: 500;
-        font-family: 'Amatic SC', Assistant;
-        color: #aa9865;
-    }
-
-.photos {
-    width: 35%;
-    margin-right: 460px;
-    vertical-align: baseline;
-}
-
-.picNum {
-    position: absolute;
-    text-align: center;
-    margin-top: 500px;
-    margin-right: 10px;
-    font-family: 'Assistant',Segoe UI;
-    font-size: 8px;
-    background-color: white;
-    opacity: 85%;
-    border-radius: 7px;
-    font-weight: 700;
-    padding: 10px;
-}
-
-.mark {
-    cursor: pointer;
-}
-
-#left, #right {
-    cursor: pointer;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    bottom: 200px;
-    color: #897136;
-    background-color: #cecece;
-    opacity: 90%;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-    display: inline;
-    position: relative;
-}
-
-#right {
-    right: 340px;
-    box-shadow: 5px 10px 10px 5px #ead8d8;
-}
-
-#left {
-    right: 765px;
-    box-shadow: 5px 10px 10px 5px #ead8d8;
-}
-
-
-    #left:hover, #right:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-.picNum {
-    display: block;
-    color: #897136;
-    font-size: 12px;
-    padding: 8px 12px;
-    top: 0;
-    width: 25px;
-}
-
-.imgDescription {
-    text-align: center;
-    background-color: white;
-    border-radius: 7px;
-    border: double 2px #897136;
-    color: #897136;
-    opacity: 75%;
-    width: 405px;
-    height: 30px;
-    margin-right: 395px;
-    padding-top: 10px;
-}
-
-
-.imgRow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.imgColum {
-    float: right;
-    align-text: center;
-    width: 7%;
-}
-
-.imgRow {
-    margin-right: 380px;
-}
-
-.imgColum:hover.active {
-    opacity: 100%;
-}
-
-.demo {
-    opacity: 60%;
-}
-
-    .active, .demo:hover {
-        opacity: 100%;
-        box-shadow: 5px 10px 10px 5px #ead8d8;
-        z-index: 2;
-        position: relative;
-    }
-
 
 /*--------------------------------------------------------*/
-/*תפריט עליון ופירורי לחם
-*/
+
+
 nav {
-    background-color: #FFFFFF;
+    background-color: #efe7d8;
     opacity: 85%;
     height: 60px;
     width: 1280px;
     color: black;
     position: fixed;
+    z-index: 4;
 }
 
 #navTop > li {
@@ -189,6 +59,7 @@ nav {
     padding: 55px;
     margin: auto;
     line-height: 52px;
+    width: 700px; /* לברר קריטיות*/
 }
 
 #logoPic {
@@ -205,10 +76,12 @@ nav {
     padding: 10px;
     display: inline-block;
     margin-left: 8px;
+    z-index: 5;
 }
 
 .liWord a:hover {
-    border-bottom: 4px solid #fccac5;
+    border-bottom: 4px solid #AA935E;
+    transition: 0.3s ease;
 }
 
 .notActive {
@@ -237,77 +110,6 @@ nav {
             content: "";
             color: #aa9865;
         }
-
-/*--------------------------------------------------------*/
-
-/*תפריט עליון ופירורי לחם
-*/
-
-nav {
-    background-color: #FFFFFF;
-    opacity: 85%;
-    height: 60px;
-    width: 1280px;
-    color: black;
-    position: fixed;
-}
-
-#navTop > li {
-    display: inline;
-    text-align: justify;
-    position: center;
-    font-family: "Assistant",Segoe UI;
-    padding: 55px;
-    margin: auto;
-    line-height: 52px;
-}
-
-#logoPic {
-    height: 50px;
-    display: inline-block;
-    float: right;
-    margin-left: 7px;
-    margin-top: 3px;
-}
-
-.icons {
-    height: 37px;
-    float: left;
-    padding: 10px;
-    display: inline-block;
-    margin-left: 8px;
-}
-
-.liWord a:hover {
-    border-bottom: 4px solid #fccac5;
-}
-
-.notActive {
-    cursor: not-allowed;
-}
-
-#breadCrumps {
-    display: block;
-    padding: 10px;
-    margin-right: 35px;
-}
-
-#breadCrumps li {
-     display: inline-block;
-     padding-right: 5px;
-     padding-top: 10px;
-     font-size: 70%;
-}
-
-#breadCrumps li:after {
-       padding-right: 10px;
-       content: ">";
-}
-
-#breadCrumps li:last-child:after {
-        content: "";
-        color: #aa9865;
-}
 
 
 /*--------------------------------------------------------*/
@@ -394,19 +196,19 @@ li:hover #insideNav {
     text-align: center;
     padding: 12px;
     display: inline-block;
-    background-color: #F8D9D4;
+    background-color: #efe7d8;
     margin: 15px;
     border-radius: 10px;
     transition: 0.3s ease;
 }
 
-.exContainer:hover {
-background-color: #d1c197;
-}
+    .exContainer:hover {
+        background-color: #d1c197;
+    }
 
-.exContainer:hover .exHead {
-     background-color: #f9f3e4;
-}
+        .exContainer:hover .exHead {
+            background-color: #f9f3e4;
+        }
 
 .exHead {
     width: 150px;
@@ -414,7 +216,7 @@ background-color: #d1c197;
     text-align: center;
     padding: 12px;
     display: inline-block;
-    background-color: #FDEEEB;
+    background-color: #D1BD8B;
     border-radius: 10px;
     transition: 0.3s ease;
 }
@@ -461,7 +263,7 @@ background-color: #d1c197;
 #pageEnd {
     width: 1280px;
     height: 90px;
-    background-color: #f9d8d4;
+    background-color: #efe7d8;
     position: absolute;
 }
 
@@ -478,7 +280,7 @@ background-color: #d1c197;
 .form-container {
     width: 100%;
     border: 8px double #cbb981;
-    border-radius: 20px;
+ border-radius: 20px;
     padding: 40px;
     margin: 100px 180px 20px 0px;
     background-color: #f4f1e9;
@@ -714,6 +516,56 @@ tr, th, td {
 
 /*מוצרי פנים*/
 
+/*.face-container {
+    width: 100%;
+    padding-right: 200px;
+    padding-bottom: 60px;
+}
+
+
+
+.face {
+    background-color: #FFFFFF;
+    width: 45%;
+    padding-right: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 70px;
+    border-radius: 20px;
+    text-align: justify;
+    transition: 0.2s ease;
+}
+
+
+    .face:hover {
+        transform: translateY(5px);
+        box-shadow: 5px 10px 10px 5px #ead8d8;
+    }
+
+.face-container h1 {
+    font-size: 300%;
+    padding-top: 100px;
+    padding-right: 340px;
+    text-decoration: underline 3px dotted;
+}
+
+.face > p {
+    display: block;
+    margin-top: 5px;
+    line-height: 20pt;
+    padding: 5px 15px 15px 15px;
+}
+
+
+
+.face-container > section > img {
+}
+
+.left, .right {
+    display: inline-flex;
+    margin-top: 70px;
+}
+*/
 .face-container {
     display: block;
     margin-right: 240px;
@@ -820,3 +672,134 @@ section > .face > p {
 .bron {
     margin-right: 45px;
 }
+
+/*--------------------------------------------------------*/
+/*גלריה:*/
+
+.gallery {
+    box-sizing: border-box;
+    font-family: 'Assistant',Segoe UI;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+    .gallery > h2 {
+        margin-right: 560px;
+        margin-bottom: 15px;
+        font-size: 300%;
+        font-weight: 500;
+        font-family: 'Amatic SC', Assistant;
+        color: #aa9865;
+    }
+
+.photos {
+    width: 35%;
+    margin-right: 460px;
+    vertical-align: baseline;
+}
+
+.picNum {
+    position: absolute;
+    text-align: center;
+    margin-top: 41%;
+    margin-right: 10px;
+    font-family: 'Assistant',Segoe UI;
+    font-size: 8px;
+    background-color: white;
+    opacity: 85%;
+    border-radius: 7px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+
+
+#left, #right {
+    cursor: pointer;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    bottom: 200px;
+    color: #897136;
+    background-color: #cecece;
+    opacity: 90%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    display: inline;
+    position: relative;
+}
+
+#right {
+    right: 340px;
+    box-shadow: 5px 10px 10px 5px #ead8d8;
+}
+
+#left {
+    right: 765px;
+    box-shadow: 5px 10px 10px 5px #ead8d8;
+}
+
+
+    #left:hover, #right:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+.picNum {
+    display: block;
+    color: #897136;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+    width: 25px;
+}
+
+.imgDescription {
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    border: double 2px #897136;
+    color: #897136;
+    opacity: 75%;
+    width: 405px;
+    height: 30px;
+    margin-right: 395px;
+    padding-top: 10px;
+}
+
+
+.imgRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.imgColum {
+    float: right;
+    align-text: center;
+    width: 7%;
+}
+
+.imgRow {
+    margin-right: 380px;
+}
+
+.imgColum:hover.active {
+    opacity: 100%;
+}
+
+.demo {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+
+    .active, .demo:hover {
+        opacity: 100%;
+        box-shadow: 5px 10px 10px 5px #ead8d8;
+        z-index: 2;
+        position: relative;
+    }
